@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Theaters</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Le styles -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <style type="text/css">
+      body {
+        padding-top: 60px;
+        padding-bottom: 40px;
+      }
+      .sidebar-nav {
+        padding: 9px 0;
+      }
+
+      @media (max-width: 980px) {
+        /* Enable use of floated navbar text */
+        .navbar-text.pull-right {
+          float: none;
+          padding-left: 5px;
+          padding-right: 5px;
+        }
+      }
+    </style>
+    <link href="css/bootstrap-responsive.css" rel="stylesheet">
+
+    <!-- Fav and touch icons -->
+  </head>
+
+  <body>
+<!--1. header -->
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container-fluid">
+          <a class="brand" href="#">MBME</a>
+          <div class="nav-collapse collapse">
+            <p class="navbar-text pull-right">
+               Logged in as <a href="login.php" class="navbar-link"><?php if($uName!==null) echo $uName; else echo 'Username';?></a>
+            &nbsp;&nbsp;<a href="login.php">Log out</a>
+            </p>
+            <img src="img/search.png">
+            <form action="search.php" method="POST" style="display: inline;">
+            <input id="search" type="text" name="search">
+            <button id="search_btn" type="submit">Search</button>
+          </form>
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </div>
+
+<!-- 2. content -->
+    <div class="container-fluid">
+      <div class="row-fluid">
+        <!-- 2.1 left pane -->
+        <div class="span2 menu">
+          <div class="well sidebar-nav">
+            <ul class="nav nav-list">
+              <li class="nav-header">MENU</li>
+              <li><a href="#">Home Page</a></li>
+              <li><a href="#">Movies</a></li>
+              <li class="active"><a href="#">Theatres</a></li>
+              <li><a href="#">Top Rated Movies</a></li>
+            </ul>
+          </div><!--/.well -->
+        </div><!--/span-->
+
+        <!-- 2.2 center pane -->
+        <div class="span7" >
+          <div class="center-ticket">
+            <div class="row" style="margin: 20px 0 20px 0;">
+              <div class="span3">
+                <label for="city">City</label>
+                <select class= "w-100" id="city" required>
+                  <option value="">Choose...</option>
+                  <option>Pittsburgh</option>
+                </select>
+              </div>
+              <div class="span3">
+                <label for="date">Date</label>
+                <input type="date" class="w-100" id="date" required>
+              </div>
+            </div>
+          <!-- movie section-->
+          <div class="row-fluid border">
+            <div class="span3">
+              <img src="img/default.jpg" style="margin: 0 0 20px 20px">
+            </div><!--/span-->
+            <div class="span9">
+              <h5>Movie Name</h5>
+              <p>runtimeMinutes - genres</p>
+              <p>year</p>
+              <p>Discription:</p>
+              <p>Directors</p>
+              <p>Stars</p>
+            </div><!--/span-->
+          </div><!--/row-->
+          <div class="span12 text-list">
+            <p><h4>Theaters</h4></p>
+          </div>
+          <div class="row-fluid border theater-blo">
+            <div class="span12 title-blue ">
+              <h5>Theater Name</h5>
+              <p>address | phone</p><br>
+              <h5>Showtimes</h5>
+              <p><a href="">12:00</a>&nbsp; | &nbsp;<a href="">12:30</a>&nbsp; | &nbsp;<a href="">13:00</a></p>
+            </div><!--/span-->
+          </div><!--/row-->
+          <div class="row-fluid theater-blo">
+            <div class="span12 title-blue">
+              <h5>Theater Name</h5>
+              <p>address | phone</p><br>
+              <h5>Showtimes</h5>
+              <p><a href="">12:00</a>&nbsp; | &nbsp;<a href="">12:30</a>&nbsp; | &nbsp;<a href="">13:00</a></p>
+            </div><!--/span-->
+          </div><!--/row-->
+
+          
+        </div><!--/span-->
+        </div>
+
+        <!-- 2.3 right pane -->
+        <div class="span3">
+          <div class="card">
+            <div class="card-header">
+              <h4 class="font-weight-normal">Recommendation</h4>
+            </div>
+            <div class="card-body">
+              <ul class="">
+                <li><a href="#">movie name</a></li>
+                <li><a href="#">movie name</a></li>
+                <li><a href="#">movie name</a></li>
+                <li><a href="#">movie name</a></li>
+                <li><a href="#">movie name</a></li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+      </div><!--/row-->
+
+      <hr>
+
+      <footer>
+        <p>&copy; Company 2013</p>
+      </footer>
+
+    </div><!--/.fluid-container-->
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="../assets/js/jquery.js"></script>
+    <script src="../assets/js/bootstrap-transition.js"></script>
+    <script src="../assets/js/bootstrap-alert.js"></script>
+    <script src="../assets/js/bootstrap-modal.js"></script>
+    <script src="../assets/js/bootstrap-dropdown.js"></script>
+    <script src="../assets/js/bootstrap-scrollspy.js"></script>
+    <script src="../assets/js/bootstrap-tab.js"></script>
+    <script src="../assets/js/bootstrap-tooltip.js"></script>
+    <script src="../assets/js/bootstrap-popover.js"></script>
+    <script src="../assets/js/bootstrap-button.js"></script>
+    <script src="../assets/js/bootstrap-collapse.js"></script>
+    <script src="../assets/js/bootstrap-carousel.js"></script>
+    <script src="../assets/js/bootstrap-typeahead.js"></script>
+
+  </body>
+</html>

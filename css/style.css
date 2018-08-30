@@ -1,0 +1,213 @@
+  input#search{
+    margin-top: 8px;
+    height: 18px;
+  }
+
+  button{
+    background: #ffffff;
+    height: 28px;
+    width:70px;
+    margin-left: 10px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    border-top-style: none;
+    border-right-style: none;
+    border-bottom-style: none;
+    border-left-style: none;
+    color:grey;
+  }
+
+  img{
+    width:25px;
+    padding:5px;
+  }
+
+  
+
+  .menu{
+    margin-top: 30px;
+  }
+
+  .border{
+    border-bottom: 1px solid #dee2e6 !important;
+  }
+
+  .imgbackground {
+
+   background-image: url(img/movie.jpg); 
+   background-repeat: no-repeat; 
+   background-size:800px 400px;
+
+ }
+ .border h3, h4{
+  display: inline;
+}
+
+.border .more{
+  display: inline;
+  float: right;
+}
+
+.row-fluid img{
+  width:80%;
+  padding:10px 0 10px 0px;
+}
+.center .span3{
+  text-align: center;
+}
+
+.card {
+  margin:20px 0 0;
+  position: relative;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 0.25rem;
+}
+
+.card-header {
+  text-align: center;
+  padding: 0.75rem 1.25rem;
+  margin-bottom: 0;
+  background-color: rgba(0, 0, 0, 0.03);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+}
+
+.card-body {
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  padding: 1.25rem;
+}
+
+/* movies page */
+.navbar .navbar-inner {
+  padding: 0;
+}
+.navbar .nav {
+  margin: 0;
+  display: table;
+  width: 100%;
+}
+.navbar .nav li {
+  display: table-cell;
+  width: 1%;
+  float: none;
+}
+.navbar .nav li a {
+  font-weight: bold;
+  text-align: center;
+  border-left: 1px solid rgba(255,255,255,.75);
+  border-right: 1px solid rgba(0,0,0,.1);
+}
+.navbar .nav li:first-child a {
+  border-left: 0;
+  border-radius: 3px 0 0 3px;
+}
+.navbar .nav li:last-child a {
+  border-right: 0;
+  border-radius: 0 3px 3px 0;
+}
+
+/* movie-info */
+.center-info{
+  margin:20px;
+}
+
+.text-list{
+  padding:10px;
+}
+
+.blo{
+  padding: 20px;
+}
+
+#poster{
+  margin:0px;
+  padding:0px;
+}
+
+/*ticket*/
+.center-ticket{
+  margin:0 10px 0 5px;
+}
+
+.w-100 {
+  width: 100% !important;
+}
+
+label{
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.title-blue{
+  line-height: 1;
+
+}
+.title-blue h5{
+  margin-top: -5px;
+  color:#5891FF;
+}
+
+.theater-blo{
+  padding:20px 0 10px 30px;
+}
+
+.tickets{
+  padding-left: 30px;
+}
+.title-blue .flat{
+  margin-top: -5px;
+  color:grey;
+}
+
+.bs-glyphicons{
+  margin:0 -10px 20px;overflow:hidden
+}
+.bs-glyphicons-list{
+  padding-left:0;list-style:none
+}
+.bs-glyphicons li{
+  float:left;
+  width:25%;
+  height:80px;
+  padding:10px;
+  font-size:10px;
+  line-height:1.4;
+  text-align:center;
+  background-color:#f9f9f9;
+  border:1px solid #fff
+}
+.bs-glyphicons .glyphicon{
+  margin-top:5px;
+  margin-bottom:10px;
+  font-size:24px
+}
+.bs-glyphicons .glyphicon-class{
+  display:block;
+  text-align:center;
+  word-wrap:break-word
+}
+
+.bs-glyphicons .active {
+  background: #0ABDBD;
+}
+.bs-glyphicons li:hover{
+  color:#fff;
+  background-color:#0ABDBD;
+}
+@media (min-width:768px){
+  .bs-glyphicons{
+    margin-right:0;margin-left:0
+  }
+  .bs-glyphicons li{
+    width:12.5%;font-size:12px
+  }
+}
